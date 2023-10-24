@@ -1,0 +1,26 @@
+[
+    {
+       "id":1,
+       "nombre":"Adulto Dog Maintenance Formula 20 Kg",
+       "precio":23000,
+       "img":"../img/Balanced.jpg"
+    },
+    {
+       "id":2,
+       "nombre":"Adult Cat Smart 7,5kg",
+       "precio":12000,
+       "img":"../img/Dog.jpg"
+    },
+    {
+       "id":3,
+       "nombre":"Shampoo(x10 Unidades)",
+       "precio":8000,
+       "img":"../img/SHAMPOO.jpg"
+    },
+    {
+       "id":4,
+       "nombre":"Paños Sanitarios (x10 Unidades)",
+       "precio":42000,
+       "img":"../img/PAÑO.jpg"
+    }
+ ]
