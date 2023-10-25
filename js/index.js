@@ -150,10 +150,23 @@ Swal.fire(
 //sweetalert de boton confirmar
 const btn = document.querySelector('#confirmar-compra')
 btn.addEventListener('click', () => {
-Swal.fire({
-title: 'Compra confirmada!!!',
-text: '¡Muchas Gracias por elegirnos!',
-icon: 'success',
-confirmButtonText: 'Aceptar'
-})
-})
+    Swal.fire({
+        title: '¿Confirmar compra?',
+        text: '¿Estás seguro de que deseas confirmar la compra de este carrito?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Sí, confirmar compra',
+        cancelButtonText: 'Cancelar',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            // Aquí puedes agregar la lógica para confirmar la compra
+            Swal.fire('Compra confirmada', '', 'success');
+        } else {
+            Swal.fire('Compra cancelada', '', 'error');
+        }
+    });
+});
+
+
+
+    
