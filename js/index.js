@@ -138,6 +138,15 @@ const pedirproductos = async () => {
 
 pedirproductos()
 
+//sweetalert de boton vaciar carrito
+const btn1 = document.querySelector('#vaciar-carrito')
+btn1.addEventListener('click', () => {
+Swal.fire(
+    '¿Desea Vaciar el carrito?',
+    'Presione OK para continuar',
+    'question'
+  )})
+
 //sweetalert de boton confirmar
 const btn = document.querySelector('#confirmar-compra')
 btn.addEventListener('click', () => {
